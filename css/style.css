@@ -102,10 +102,10 @@ table {
         #ffff 50%
       );
     background-size: 200% 100%;
-  background-position: -100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
 }
 .mainLink:before {
     content: '';
@@ -343,6 +343,9 @@ and (max-width: 650px){
     }
     .contactsBackgroundColor{
         padding: 0 0 40px 0;
+    }
+    .arrow div::before {
+        content: normal;
     }
 
 }
