@@ -298,8 +298,10 @@ and (max-width: 650px){
         font-size: 20px;
     }
     .siteInfo{
-        font-size: 20px;
         margin: 10px 0;
+    }
+    .siteLink{
+        font-size: 20px;
     }
 
 }
