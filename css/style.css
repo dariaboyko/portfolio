@@ -300,6 +300,9 @@ and (max-width: 650px){
     .shotSitePhone{
         display: none;
     }
+    .shotSite{
+        padding: 20px 10px;
+    }
     .contacts{
         font-size: 19px;
     }
