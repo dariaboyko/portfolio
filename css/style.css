@@ -338,5 +338,8 @@ and (max-width: 650px){
     .github{
         left: 50px;
     }
+    .background{
+        height: 95vh;
+    }
 
 }
