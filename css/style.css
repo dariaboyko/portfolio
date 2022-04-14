@@ -1,0 +1,301 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+li{
+  color: white;
+}
+a:active,
+a:hover,
+a:focus, 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.navigation a:hover{
+  text-decoration: underline;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.backgroundColor{
+    background: #5126AB;
+}
+.background{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.titles{
+    margin: 30px 0 0 30px;
+    width: 450px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bowlby One SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    color: #ffff;
+}
+.underTitle{
+    font-size: 30px;
+}
+.menu{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Racing Sans One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    color: #ffff;
+    text-align: right;
+    align-items: flex-end;
+    margin: auto 10px;
+    gap: 30px;
+}
+.mainLink {
+    background-image: linear-gradient(
+        to right,
+        black,
+        black 50%,
+        #ffff 50%
+      );
+    background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.mainLink:before {
+    content: '';
+    background: black;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+}
+.mainLink:hover {
+    background-position: 0;
+}
+.mainLink:hover::before {
+    width: 100%;
+}
+.footer{
+    font-family: 'Libre Barcode 39';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    color: #ffff;
+}
+.barcode{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+/* works.html */
+.worksBackgroundColor{
+    background: linear-gradient(242.84deg, #5126AB 0%, #170B31 100%);
+    padding: 10px 0 0 0;
+}
+.shotSite{
+    height:100vh;
+    width:100%;
+    padding: 20px 20px;
+    display: block;
+}
+.shotSitePhone{
+    height:700px;
+    width:550px;
+    padding: 0 20px 20px 20px;
+}
+.siteLink{
+    font-family: 'Bowlby One SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+.siteMenu{
+    display: flex;
+    flex-direction: row;
+}
+.siteInfo{
+    margin: auto 0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer{
+    height: 30px;
+}
+
+
+/* contacts.html */
+.contactsBackgroundColor{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(242.84deg, #5126AB 17.19%, #7959BF 43.75%, #9379CB 60.63%, #AC98D7 76.22%, #C6B8E3 86.21%, #FFFFFF 100%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.contacts{
+    margin: 0 auto;
+    font-family: 'Bowlby One SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.linkedIn{
+    position: absolute;
+    bottom:0;
+}
+.github{
+    position: absolute;
+    bottom:5px;
+    left:70px;
+}
+.arrow{
+	cursor: pointer;
+	position: absolute;
+	width: 85px;
+	height: 70px;
+    top:10px;
+    left: 10px;
+}
+.arrow div{
+	position: relative;
+	top: 30px;
+	width: 70px;
+	height: 4px;
+	background-color: black;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+	left:10px;
+	display: block;
+}
+.arrow div::after {
+	content: '';
+	position: absolute;
+	width: 35px;
+	height: 4px;
+	top: -12px;
+	left: -4px;
+	background-color: black;
+	transform: rotate(-45deg);
+}
+.arrow div::before {
+	content: '';
+	position: absolute;
+	width: 35px;
+	height: 4px;
+	top: 12px;
+	left: -4px;
+	background-color: black;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+	transform: rotate(45deg);
+}
+.arrow :hover {
+	animation: arrow 1s linear infinite;
+}
+@keyframes arrow {
+    0% {
+        left:0;
+	}
+    50% {
+        left:10px;
+	}
+    100% {
+        left:0;
+	}
+}
+@media only screen
+and (min-width: 0)
+and (max-width: 1330px){
+    .kakegurui{
+        display: none;
+    }
+}
+@media only screen
+and (min-width: 0)
+and (max-width: 650px){
+    .barcode{
+        left:0;
+    }
+    .titles , .footer , .menu{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }   
+    .titles, .footer{
+        font-size: 50px;
+    }
+    .underTitle{
+        font-size: 20px;
+    }
+    .titles{
+        gap: 10px;
+    }
+    .menu{
+        font-size: 39px;
+        align-items: center;
+    }
+    .shotSitePhone{
+        display: none;
+    }
+    .contacts{
+        font-size: 20px;
+    }
+
+}
