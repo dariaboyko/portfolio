@@ -342,8 +342,7 @@ and (max-width: 650px){
         left: 50px;
     }
     .contactsBackgroundColor{
-        height: 100%;
-        position: absolute;
+        padding: 0 0 40px 0;
     }
 
 }
